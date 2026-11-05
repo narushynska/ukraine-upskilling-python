@@ -137,7 +137,7 @@ print(pd.to_datetime("03.11.2026", format="%d.%m.%Y"))
 # В Україні спершу день, в США спершу місяць. Pandas за замовчуванням вважає, що **спершу місяць**. Тому для наших дат пишіть або `format`, або `dayfirst=True`.
 
 # %%
-x = "03/11/2026"
+x = "03/12/2026"
 print("як в США (%m/%d):", pd.to_datetime(x, format="%m/%d/%Y").date(), "(місяць перший)")
 print("dayfirst=True   :", pd.to_datetime(x, dayfirst=True).date(), "(день перший)")
 print("format %d/%m/%Y :", pd.to_datetime(x, format="%d/%m/%Y").date())
